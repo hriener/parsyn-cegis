@@ -32,5 +32,5 @@ The following software is required in order to use ParSyn-CEGIS
 
 A simple example
 
-    $ parsyn-cegis.py benchmarks/thermal1-s2-safe.smt2 "INV_CLK0 INV_CLK1 INV_THETA_M_LO INV_THETA_M_HI" -K 10 -l logs/thermal1-s2-safe.json -t 5
-    $ json2tex.py logs/thermal1-s2-safe.json -k 3
+    $ parsyn-cegis.py benchmarks/thermal1-s2-safe.smt2 "INV_U INV_L" -K 10 -l logs/thermal1-s2-safe.json -t 5
+    $ json2tex.py logs/thermal1-s2-safe.json -k 2
