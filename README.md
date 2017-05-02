@@ -7,7 +7,7 @@ ParSyn is a flexible software framework for parameter synthesis and repair of cy
 The following software is required in order to use ParSyn-CEGIS
 
 * Python3
-* Z3 (version 4.3.1)
+* Z3 (version 4.4.2)
 
 ## Executing ParSyn-CEGIS
 

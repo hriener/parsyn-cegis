@@ -26,7 +26,7 @@ def SMTsolve(smt,params,filename='/tmp/parsyn-cegis.smt2'):
         smt.append('(get-value ({0}))'.format(p))
     with open(filename, "w") as f:
         f.write("\n".join(smt))
-    p = Popen(['z3', '-ini:test.ini', '-smt2', filename], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+    p = Popen(['z3', '-smt2', filename], stdin=PIPE, stdout=PIPE, stderr=PIPE)
     output, err = p.communicate(b"")
     rc = p.returncode
     #assert rc == 0 # should be 0, but doesn't hv anything to do with sat/unsat/unknown
