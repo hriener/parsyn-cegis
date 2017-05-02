@@ -57,4 +57,4 @@ for i in range(1,len(data[0])):
     tr = mean([sum(data[l][i]['counterexample_randomization.time']) for l in range(num_experiments)])
     time = mean([data[l][i]['cegis.time'] for l in range(num_experiments)])
 
-    print('\\texttt{{{:s}}} & {:d} & {:d} & {:8.2f} & {:8.2f} & {:s} & {:8.2f} & {:8.2f} & {:8.2f} & {:8.2f}\\\\'.format(name,num_params,k,smt_calls,num_cex,solution,tp,tc,tr,time))
+    print('\\texttt{{{:s}}} & {:d} & {:d} & {:8.2f} & {:8.2f} & {:3s} & {:8.2f} & {:8.2f} & {:8.2f} & {:8.2f}\\\\'.format(name,num_params,k,smt_calls,num_cex,solution,tp,tc,tr,time))
