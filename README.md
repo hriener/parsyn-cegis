@@ -34,3 +34,7 @@ A simple example
 
     $ parsyn-cegis.py benchmarks/thermal1-s2-safe.smt2 "INV_U INV_L" -K 10 -l logs/thermal1-s2-safe.json -t 5
     $ json2tex.py logs/thermal1-s2-safe.json -k 2
+
+## References
+
+Heinz Riener, Robert Könighofer, Görschwin Fey, Roderick Bloem, SMT-Based CPS Parameter Synthesis, In Applied Verification for Continuous and Hybrid Systems (ARCH@CPSWeek 2016), vol 43, pp. 126-133, Vienna, Austra, 2016. ([EasyChair Proc.](https://easychair.org/publications/paper/1fL))
